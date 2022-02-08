@@ -1,0 +1,35 @@
+.main {
+  width: 95%;
+  max-width: 70rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.rating {
+  &-text {
+    &__title {
+      font-size: clamp(1.8rem, 4rem, 2.5vw);
+    }
+  }
+
+  &-stars {
+    &__container {
+      width: 100%;
+      background-color: $star-card;
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+    &__stars {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.customers {
+  &-card {
+    padding: 1rem;
+    background-color: $accent-color;
+    border-radius: 0.5rem;
+  }
+}

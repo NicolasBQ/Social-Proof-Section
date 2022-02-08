@@ -1,1 +1,66 @@
 @import "config";
+@import "component";
+
+body {
+  font-family: "Spartan", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left 50% top 0;
+
+  @include for-laptop-up {
+    background-image: url(../img/bg-pattern-top-desktop.svg),
+      url(../img/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left 15% top 0, right 0 top 50%;
+  }
+}
+
+.accent-text {
+  color: $accent-color;
+}
+
+.pink-text {
+  color: $soft-pink;
+}
+
+.gray-text {
+  color: $gray-text;
+  line-height: 150%;
+}
+
+.white-text {
+  color: $white;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.customer-image {
+  border-radius: 50%;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}

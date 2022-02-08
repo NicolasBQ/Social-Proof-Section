@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -5,5 +6,107 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.main {
+  width: 95%;
+  max-width: 70rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.rating-text__title {
+  font-size: clamp(1.8rem, 4rem, 2.5vw);
+}
+
+.rating-stars__container {
+  width: 100%;
+  background-color: #f7f2f7;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.rating-stars__stars {
+  margin-bottom: 0.5rem;
+}
+
+.customers-card {
+  padding: 1rem;
+  background-color: #502050;
+  border-radius: 0.5rem;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left 50% top 0;
+}
+
+@media screen and (min-width: 75em) {
+  body {
+    background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left 15% top 0, right 0 top 50%;
+  }
+}
+
+.accent-text {
+  color: #502050;
+}
+
+.pink-text {
+  color: #ee68a4;
+}
+
+.gray-text {
+  color: #937b92;
+  line-height: 150%;
+}
+
+.white-text {
+  color: white;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.customer-image {
+  border-radius: 50%;
+}
+
+.margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
