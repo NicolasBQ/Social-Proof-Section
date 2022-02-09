@@ -1,5 +1,6 @@
 @import "config";
 @import "component";
+@import "responsive";
 
 body {
   font-family: "Spartan", sans-serif;
@@ -15,7 +16,7 @@ body {
   @include for-laptop-up {
     background-image: url(../img/bg-pattern-top-desktop.svg),
       url(../img/bg-pattern-bottom-desktop.svg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-position: left 15% top 0, right 0 top 50%;
   }
 }
@@ -30,7 +31,6 @@ body {
 
 .gray-text {
   color: $gray-text;
-  line-height: 150%;
 }
 
 .white-text {
@@ -53,8 +53,14 @@ body {
   text-align: center;
 }
 
+.line-150 {
+  line-height: 150%;
+}
+
 .customer-image {
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .margin-bottom-2 {
@@ -63,4 +69,23 @@ body {
 
 .margin-bottom-1 {
   margin-bottom: 1rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 700;
+  color: $gray-text;
+  &__text {
+    font-size: 1rem;
+  }
+
+  &__link {
+    color: inherit;
+  }
+
+  &__link:hover {
+    text-decoration: none;
+    color: $accent-color;
+  }
 }

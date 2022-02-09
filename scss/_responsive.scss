@@ -1,0 +1,62 @@
+@include for-laptop-up {
+  .rating {
+    display: flex;
+    text-align: left;
+    gap: 5%;
+
+    &-text {
+      width: 40%;
+    }
+
+    &-stars {
+      width: 50%;
+      &__container {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &-1 {
+          left: 0%;
+        }
+
+        &-2 {
+          left: 5%;
+        }
+
+        &-3 {
+          left: 10%;
+        }
+      }
+
+      &__stars {
+        margin-bottom: 0;
+        margin-left: 1rem;
+      }
+
+      &__text {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .customers {
+    display: flex;
+    gap: 2rem;
+
+    &-card {
+      position: relative;
+
+      &-1 {
+        top: 0;
+      }
+
+      &-2 {
+        top: 20px;
+      }
+
+      &-3 {
+        top: 40px;
+      }
+    }
+  }
+}
